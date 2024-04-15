@@ -12,8 +12,8 @@ rofiAssetDir="${confDir}/rofi/assets"
 
 #// set rofi scaling
 
-[[ "${rofiScale}" =~ ^[0-9]+$ ]] || rofiScale=10
-r_scale="configuration {font: \"JetBrainsMono Nerd Font ${rofiScale}\";}"
+[[ "${rofiSelectScale}" =~ ^[0-9]+$ ]] || rofiSelectScale=10
+r_scale="configuration {font: \"JetBrainsMono Nerd Font ${rofiSelectScale}\";}"
 
 
 #// scale for monitor
@@ -28,7 +28,7 @@ aspect_r=$((x_monres * 10 / y_monres ))
 elem_border=$(( hypr_border * 5 ))
 icon_border=$(( elem_border - 5 ))
 i_size=$(( aspect_r - 4 ))
-r_override="listview{columns:5;} element{orientation:vertical;border-radius:${elem_border}px;} element-icon{border-radius:${icon_border}px;size:${i_size}em;} element-text{enabled:false;}"
+r_override="listview{columns:4;} element{orientation:vertical;border-radius:${elem_border}px;} element-icon{border-radius:${icon_border}px;size:${i_size}em;} element-text{enabled:false;}"
 
 
 #// launch rofi menu
