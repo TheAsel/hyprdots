@@ -8,7 +8,7 @@
     "security.workspace.trust.enabled": false,
     "editor.fontFamily": "'CaskaydiaCove Nerd Font Mono', 'monospace', monospace",
     "extensions.autoUpdate": false,
-    "workbench.statusBar.visible": true,
+    "workbench.statusBar.visible": false,
     "terminal.external.linuxExec": "kitty",
     "terminal.explorerKind": "both",
     "terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font Mono",
