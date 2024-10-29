@@ -19,6 +19,8 @@
     "terminal.explorerKind": "both",
     "terminal.integrated.fontFamily": "'FiraCode Nerd Font Mono', 'monospace'",
     "terminal.sourceControlRepositoriesKind": "both",
+    "terminal.integrated.persistentSessionReviveProcess": "never",
+    "terminal.integrated.enablePersistentSessions": false,
     "telemetry.telemetryLevel": "off",
     "sonarlint.ls.javaHome": "/usr/lib/jvm/java-22-openjdk",
 }
