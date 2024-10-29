@@ -30,12 +30,12 @@ done
 
 #// apply theme
 
-for i in "${!codeConf[@]}" ; do
-    [ -d "${codeConf[i]}/User" ] || continue
-    [ -f "${codeConf[i]}/User/settings.json" ] ||  echo -e "{\n \"workbench.colorTheme\":\"wallbash\" \n}" > "${codeConf[i]}/User/settings.json"
-    extTheme="$(jq -r '.["workbench.colorTheme"]' "${codeConf[i]}/User/settings.json")"
-
-    if [ "${extTheme}" != "wallbash" ] ; then
-        jq '.["workbench.colorTheme"] = "wallbash"' "${codeConf[i]}/User/settings.json" > "${tmpFile}" && mv "${tmpFile}" "${codeConf[i]}/User/settings.json"
-    fi
-done
+# for i in "${!codeConf[@]}" ; do
+#     [ -d "${codeConf[i]}/User" ] || continue
+#     [ -f "${codeConf[i]}/User/settings.json" ] ||  echo -e "{\n \"workbench.colorTheme\":\"wallbash\" \n}" > "${codeConf[i]}/User/settings.json"
+#     extTheme="$(jq -r '.["workbench.colorTheme"]' "${codeConf[i]}/User/settings.json")"
+# 
+#     if [ "${extTheme}" != "wallbash" ] ; then
+#         jq '.["workbench.colorTheme"] = "wallbash"' "${codeConf[i]}/User/settings.json" > "${tmpFile}" && mv "${tmpFile}" "${codeConf[i]}/User/settings.json"
+#     fi
+# done
